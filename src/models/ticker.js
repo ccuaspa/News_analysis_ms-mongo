@@ -1,12 +1,7 @@
 const mongoose= require("mongoose");
 
 const tickerSchema = mongoose.Schema({
-    
-    id_ticker:
-    {
-        type: mongoose.Schema.Types.ObjectId,
-        required:true
-    },
+
     ticker:
     {
         type:String,
@@ -29,10 +24,9 @@ const tickerSchema = mongoose.Schema({
     },
     id_noticia:
     {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'article',
+        type: String,
+        // ref: 'article',
         required:true
     },
 })
-const tickerModel = mongoose.model('tickerModel', tickerSchema);
-module.exports =mongoose.model("tickerModel", tickerSchema)
+module.exports = mongoose.model("ticker", tickerSchema)

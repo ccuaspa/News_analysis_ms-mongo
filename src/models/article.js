@@ -1,11 +1,7 @@
 const mongoose= require("mongoose");
 
 const articleSchema = mongoose.Schema({
-    id:
-    {
-        type: mongoose.Schema.Types.ObjectId,
-        required:true
-    },
+
     titulo:
     {
         type:String,
@@ -48,5 +44,4 @@ const articleSchema = mongoose.Schema({
     },
 })
 
-const articleModel = mongoose.model('articleModel', articleSchema);
-module.exports =mongoose.model("articleModel", articleSchema)
+module.exports = mongoose.model("article", articleSchema)
