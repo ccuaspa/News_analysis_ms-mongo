@@ -1,0 +1,16 @@
+### 
+POST http://localhost:9000/api/users
+Content-Type: application/json
+
+{
+    "name": "Nikola Tesla",
+    "age": 83,
+    "email": "nikolatesla@email.com"
+}
+
+
+//De news
+###
+GET http://localhost:9000/api2/news 
+Content-type:application/json
+//{}
